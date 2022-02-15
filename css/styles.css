@@ -1,0 +1,521 @@
+
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --acсent-color: #2196F3;
+  --primary-background-color:  #FFFFFF;
+  --secondary-background-color: #F5F4FA;
+
+}
+
+body {
+    color: var(--main-text-color);
+    background-color: var(--primary-background-color);
+    position: relative;
+    max-width: 1600px;
+    height: 2349px;
+
+    font-family: Roboto, sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+img {
+    display: block;
+}
+
+/* поизиционирование */
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center
+    ;
+}
+
+.contacts-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contact-email {
+    margin-right: 50px;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.feature-item {
+    display:flex;
+    align-items: center;
+}
+
+.feature-list-item {
+    width: 270px;
+}
+
+
+
+
+/* ----------------------Site-nav-------------------- */
+
+.site-nav {
+list-style-type: none;
+letter-spacing: 0.02em;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+
+}
+.site-nav a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+color: var(--acсent-color);
+}
+
+.site-nav .link-current {
+    color: var(--acсent-color);
+
+}
+
+/* ---------------------Logo------------------------- */
+.logo {
+text-decoration: none;
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+margin-right: 93px;
+margin-bottom: 25px;
+}
+
+.logotext-accent {
+    color: var(--acсent-color);
+}
+
+.logotext-primary {
+    color: black;
+}
+
+.logotext-footer {
+    color: #FFFFFF;
+}
+
+
+
+/*------------------- Hero ---------------------------*/
+.hero {
+    margin-top: 0;
+    margin-bottom: 0;  
+
+    background-color: #2F303A;
+    letter-spacing: 0.06em;
+
+    padding: 200px 0;
+    text-align: center;
+
+}
+.hero-title {
+color: #FFFFFF;
+
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+text-transform: uppercase;
+
+margin-bottom: 30px;
+}
+
+.order-button {
+color: #FFFFFF;
+background-color: var(--acсent-color);
+
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+cursor: pointer;
+
+display: inline-block;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: transparent;
+min-width: 200px;
+padding: 10px 32px;
+border-radius: 4px;
+}
+
+.order-button:hover,
+.order-button:focus {
+ background-color:  #188CE8;
+}
+
+
+
+/*--------------------- Section ----------------------*/
+.work {
+    letter-spacing: 0.03em;
+
+}
+
+.section-title {
+color: var(--main-text-color);
+margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+}
+
+.section-list {
+    display: flex;
+}
+
+.section-list .section-list-item {
+    list-style-type: none;
+}
+
+.section-list .section-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+/*-------------------------- Contacts-nav------------------- */
+.contacts-nav {
+list-style-type: none;
+letter-spacing: 0.02em;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+
+}
+
+.contacts-nav a {
+color: var(--secondary-text-color);
+text-decoration: none;
+}
+.contacts-nav a:hover,
+.contacts-nav a:focus {
+color: var(--acсent-color)
+}
+
+
+
+/*------------------------ Features --------------------------*/
+
+.features {
+    letter-spacing: 0.03em;
+
+}
+
+.features .feature-list {
+color: var(--main-text-color);
+}
+
+.feature-item .feature-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature-item {
+    display: flex;
+    list-style-type: none;
+}
+
+.features .text {
+    color: var(--secondary-text-color);
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height:1.71;
+    letter-spacing: 0.03em;
+}
+
+.feature-list {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+
+
+/*------------------------ Team------------------------------ */
+
+.team {
+background-color: #F5F4FA;
+letter-spacing: 0.03em;
+
+}
+
+.our-team {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.team-list {
+list-style-type: none;
+
+display: flex;
+
+}
+
+.team-list .text {
+    color: var(--secondary-text-color);
+}
+
+.team-member {
+background-color: var(--primary-background-color);
+
+flex-basis: calc((100% - 120) / 4);
+margin-left: 30px;
+margin-top: 30px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px; 
+
+}
+
+
+.team .team-member {
+    list-style-type: none;
+
+}
+
+.team .team-title {
+margin-top: 30px;
+margin-bottom: 10px;
+
+color: var(--main-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+}
+
+.team-description {
+    width: 270px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.team .text {
+font-size: 16px;
+line-height: 1.2;
+text-align: center;
+}
+
+
+/*--------------------------- Footer--------------------------- */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.web-studio-footer {
+    margin-bottom: 20px;
+}
+
+.footer-contacts-location {
+    margin-bottom: 9px;
+}
+
+.footer-contacts-list{
+    margin-bottom: 9px;
+}
+
+
+.footer-contacts {
+list-style-type: none;
+letter-spacing: 0.03em;
+
+font-weight: normal;
+font-size: 14px;
+line-height: 1.7;
+
+}
+
+.footer-contacts-location a {
+    color: #FFFFFF;
+}
+
+.footer-contacts-location a:hover,
+.footer-contacts-location a:focus {
+    color: #2196F3;
+}
+
+
+.location-link {
+text-decoration: none;
+}
+
+
+
+.footer-contacts-color {
+color: #FFFFFF;
+opacity: .6;
+text-decoration: none;
+}
+
+.footer-contacts-color:hover,
+.footer-contacts-color:focus {
+    color: #2196F3;
+}
+
+
+
+/* -----------------portfolio.html------------------------------ */
+
+/* Projects */
+.button {
+color: var(--main-text-color);
+background-color: var(--secondary-background-color);
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+cursor: pointer;
+border-radius: 4px;
+border: transparent;
+}
+
+.button:hover,
+.button:focus {
+    color: #FFFFFF;
+    background-color: var(--acсent-color);
+}
+
+.projects-list {
+    list-style-type: none;
+
+}
+
+.projects-title {
+ margin-top: 20px;
+ margin-bottom: 4px;
+color: var(--main-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+
+.projects-example {
+    list-style-type: none;
+
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #EEEEEE
+}
+
+
+.projects-example:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.projects .text {
+color: var(--secondary-text-color);
+font-size: 16px;
+line-height: 1.9;    
+letter-spacing: 0.03em;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+/* portfolio позиционирование */
+ 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;;
+}
+
+.projects-list:not(:last-child) {
+    margin-right: 8px;
+}
+
+.projects-description {
+    padding-left: 24px;
+    padding-bottom: 20px;
+    text-align: left;
+}
