@@ -38,7 +38,7 @@ img {
     height:auto;
 }
 
-li {
+ul {
     padding: 0;
 }
 
@@ -266,7 +266,6 @@ color: var(--acсent-color)
 
 .features {
     letter-spacing: 0.03em;
-    padding-bottom: 94px;
 
 }
 
@@ -343,9 +342,8 @@ border-radius: 0px 0px 4px 4px;
 
 }
 
-.team-member:nth-child(1n) {
-    margin-left: 0;
-}
+.team-member:first-child {
+margin-left: 0;}
 
 
 .team .team-member {
